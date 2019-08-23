@@ -28,4 +28,8 @@ end
 
 def get_english_meaning(file_path, jpn_emoticon)
     new_hash = load_library(file_path)
+      if new_hash["get_meaning"].include?(jpn_emoticon)
+        new_hash["get_meaning"][]
 end
+
+
