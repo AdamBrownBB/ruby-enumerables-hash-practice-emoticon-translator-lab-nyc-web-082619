@@ -10,13 +10,13 @@ def load_library(file_path)
   }
  
 emo_library.each do |meaning, emoticons|
-binding.pry
+
  hash["get_meaning"][emoticons] = meaning
 
   hash["get_emoticon"][meaning] = emoticons
 
  end
-
+emo_library
 end 
 
 def get_japanese_emoticon
