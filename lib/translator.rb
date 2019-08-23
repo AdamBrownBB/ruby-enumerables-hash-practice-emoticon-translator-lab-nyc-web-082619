@@ -17,7 +17,7 @@ def load_library(file_path)
 end 
 
 
-def get_japanese_emoticon(file_path = "./lib/emoticons.yml", eng_emoticon)
+def get_japanese_emoticon(file_path, eng_emoticon)
   new_hash = load_library(file_path)
       if new_hash["get_emoticon"].include?(eng_emoticon)
         new_hash["get_emoticon"][eng_emoticon]
