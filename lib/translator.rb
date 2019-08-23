@@ -12,6 +12,11 @@ def load_library(file_path)
 # hash["get_meaning"][emoticons] = meaning
 #  hash["get_emoticon"][meaning] = emoticons
 # end
+YAML.load_file(path).each do |meaning, describe|
+     #set eng, jan from describe, so eng would be the first value, jan the second
+     eng, jan = describe
+     emoticons["get_meaning"][jan] = meaning
+     emoticons["get_emoticon"][eng] = jan
 end
 
 def get_japanese_emoticon
