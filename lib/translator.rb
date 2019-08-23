@@ -18,6 +18,8 @@ YAML.load_file(path).each do |meaning, describe|
      emoticons["get_meaning"][jan] = meaning
      emoticons["get_emoticon"][eng] = jan
 end
+emo_library
+end 
 
 def get_japanese_emoticon
   # code goes here
