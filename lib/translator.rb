@@ -18,7 +18,7 @@ def load_library(file_path)
 end 
 
 
-def get_japanese_emoticon(file_path = "", eng_emoticon)
+def get_japanese_emoticon(file_path = "./lib", eng_emoticon)
   new_hash = load_library(file_path)
       if emo_library["get_emoticon"].include?(eng_emoticon)
         emo_library["get_emoticon"][eng_emoticon]
