@@ -8,7 +8,14 @@ def load_library(file_path)
     "get_emoticon" => {}, 
     "get_meaning" => {}
   }
+ 
+emo_library.each do |meaning, emoticons|
+binding.pry
+ hash["get_meaning"][emoticons] = meaning
 
+  hash["get_emoticon"][meaning] = emoticons
+
+ end
 
 end 
 
