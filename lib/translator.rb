@@ -24,7 +24,6 @@ def get_japanese_emoticon(file_path = "./lib/emoticons.yml", eng_emoticon)
       else 
         "Sorry, it's not here"
       end  
-      
 end
 
 def get_english_meaning
