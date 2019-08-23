@@ -20,7 +20,7 @@ end
 def get_japanese_emoticon(file_path, emoticon)
   new_hash = load_library(file_path)
       if emo_library["get_emoticon"].include?(emoticon)
-        emo_library
+        emo_library["get_emoticon"]
 end
 
 def get_english_meaning
